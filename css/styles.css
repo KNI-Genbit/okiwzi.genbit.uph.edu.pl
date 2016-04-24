@@ -1,0 +1,344 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 270px;
+  background-color: #f5f5f5;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#myCarousel  .item {
+  height: 400px;
+  background-color:#bbb;
+}
+#myCarousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+#wrap > .container {
+  padding: 0 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer {
+  background-color:#414141;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+header {
+  background: #333;
+  color:#555;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+h1 {
+  font-size:50px;
+}
+
+.logo {
+  font-size:40px;
+  position:absolute;
+  z-index:1200;
+  color:#333;
+  top:70px;
+  text-align:center;
+  width:100%;
+}
+
+.logotyp {
+	position: absolute;
+	top: 0;
+}
+
+.bg {
+	width: 100%;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+  
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #2e2e2e;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #ddd;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+	color: #eee;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color: #000;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	height:50px;
+}
+
+.panel {
+	border-width:0;
+}
+
+@media (max-width: 768px) {
+	header {
+	
+	}
+}
+
+#location {
+	margin-left: 30px;
+}
+
+#map-canvas {
+background: url('https://www.google.pl/maps/place/3+Maja+54,+08-110+Siedlce/@52.1641341,22.2732136,17z/data=!3m1!4b1!4m2!3m1!1s0x471f5a5045e53a7b:0x9cd36b5c28643d22'); 
+  	width: 75%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.google-form {
+	background-image: url('formularz_bg.jpg');
+	margin: 0;
+	padding: 0;
+}
+
+.google-form p {
+	font-family: Lato, sans-serif;
+	font-size: 3em;	
+}
+
+.google-form a {
+	font-size: 2em;
+	text-decoration: underline;
+	color: #512D52;
+}
+
+.google-form a:hover {
+	color: #BF80BC;
+}
+
+.google-form a:visited {
+	color: black;
+}
+
+address {
+	float: right;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.sep-up {	/*nie dziala*/
+	background-image: url('images/separator-up.jpg');
+}
+
+.sep-down { /*nie dziala*/
+	background-image: url('images/separator-down.jpg');
+}
+
+.copy {
+	width: 200px;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+
+section {
+  color: #ffffff;
+  min-height: 400px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+
+
+.bg-2 {
+	background: url('http://iv.pl/images/56330078622485266526.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-3 {
+	background: url('http://iv.pl/images/26744817669539179749.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-4 {
+	padding-top:30px;
+    background-color:#e6e6e6;
+}
+
+.panel .img-responsive {
+	min-height:270px;
+    max-height:270px;
+}
+
+
+#banner {
+width:100%;
+height:300px;
+
+background: #552d55; /* Old browsers */
+background: -moz-linear-gradient(top,  #552d55 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#552d55), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #552d55 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #552d55 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #552d55 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #552d55 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#552d55', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+#banner-insides {
+
+padding-top:64px;
+
+width:80%;
+margin-left:auto;
+margin-right:auto;
+
+min-width:1112px;
+}
+
+#banner-logo {
+	width:554px;
+	height:190;
+	float:left;
+	margin-right:16px;
+}
+#banner-text {
+	color:#000;
+	font-size:30px;
+	margin-top:48px;
+	text-align:center;
+}
+
+.lista {
+	list-style-type: none;
+}
+
+.tytul {
+	font-weight: bold;
+}
+
+.font {
+	font-family: Lato, sans-serif; 
+}
