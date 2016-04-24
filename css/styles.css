@@ -295,7 +295,7 @@ section {
 
 #banner {
 width:100%;
-height:300px;
+height:auto;
 
 background: #8D4B8D; /* Old browsers */
 background: -moz-linear-gradient(top,  #8D4B8D 0%, #ffffff 100%); /* FF3.6+ */
@@ -308,21 +308,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8D4B8D', end
 
 }
 #banner-insides {
-
-padding-top:64px;
-
-width:80%;
-margin-left:auto;
-margin-right:auto;
-
-min-width:1112px;
+	padding-top:64px;
+	padding-bottom: 64px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:auto;
 }
 
 #banner-logo {
 	width:554px;
-	height:190;
-	float:left;
+	height:auto;
+	float:none;
 	margin-right:16px;
+	max-width: 100%;
 }
 #banner-text {
 	color:#000;
