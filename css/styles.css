@@ -351,3 +351,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8D4B8D', end
 li {
 	list-style-type: none;
 }
+
+.separator {
+    width: 100%;
+}
