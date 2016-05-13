@@ -355,3 +355,14 @@ li {
 .separator {
     width: 100%;
 }
+
+.real-list {
+	display: inline-block;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.real-list li, ul {
+	list-style-type: inherit;
+	list-style-position: inside;
+}
